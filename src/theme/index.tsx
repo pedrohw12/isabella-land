@@ -18,8 +18,8 @@ import { componentsOverrides } from "./overrides";
 //
 import NextAppDirEmotionCacheProvider from "./next-emotion-cache";
 
-// Import Roboto font
-import "@fontsource/roboto";
+// Import Alexandria font
+import "@fontsource/alexandria";
 
 // ----------------------------------------------------------------------
 

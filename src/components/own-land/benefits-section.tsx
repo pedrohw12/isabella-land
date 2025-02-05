@@ -41,14 +41,18 @@ const BenefitsSection = () => {
         <Typography variant="h3" gutterBottom>
           Uma vida com Deus
         </Typography>
-        <Typography variant="subtitle1" paragraph>
+        <Typography
+          variant="subtitle1"
+          paragraph
+          sx={{ textAlign: { xs: "center", md: "left" } }}
+        >
           Ao buscar um aprofundamento espiritual, respostas de áreas
           estacionadas{!isSmallScreen && <br />} começam a aparecer, a vida se
           torna mais leve e mudanças acontecem.
         </Typography>
 
         {/* Right Column */}
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
           Prepare-se para:
         </Typography>
 
@@ -89,7 +93,7 @@ const BenefitsSection = () => {
             width: "280px",
             height: "56px",
             borderRadius: 5,
-            mt: 8,
+            mt: 16,
           }}
         >
           <Typography

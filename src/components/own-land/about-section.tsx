@@ -11,33 +11,49 @@ export default function AboutSection() {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={4} alignItems="center">
-          {/* "Sobre" heading above the two columns (optional approach) */}
-          <Grid item xs={12}>
-            <Typography variant="h5" sx={{ mb: 2 }}>
-              Sobre
-            </Typography>
-          </Grid>
+        {/* "Sobre" heading above the two columns (optional approach) */}
+        <Typography variant="h5" sx={{ mb: 2, textAlign: "center" }}>
+          Sobre
+        </Typography>
 
-          {/* Left Column: Image */}
-          <Grid item xs={12} md={5}>
+        <Box
+          sx={{
+            mt: { xs: 5, md: 15 },
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            flex: 1,
+            justifyContent: "space-between",
+          }}
+        >
+          <Box sx={{ display: "flex", flex: 1 }}>
             <Box
               component="img"
-              // Replace with your actual image
               src="/images/isabella-cadeira.png"
               alt="Isabella Medeiros"
               sx={{
                 display: "block",
                 width: "100%",
-                maxWidth: 300,
-                mx: "auto", // center horizontally if narrower than parent
+                maxWidth: 400,
+                flex: 1,
               }}
             />
-          </Grid>
+          </Box>
 
-          {/* Right Column: Headings, Paragraph, CTA Button */}
-          <Grid item xs={12} md={7}>
-            <Typography variant="h5" gutterBottom>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center", md: "start" },
+              flex: 1,
+              flexDirection: "column",
+              mx: 1,
+              textAlign: { xs: "center", md: "left" },
+            }}
+          >
+            <Typography
+              variant="h5"
+              gutterBottom
+              sx={{ textAlign: { xs: "center", md: "left" } }}
+            >
               Quem é Isabella Medeiros ?
             </Typography>
             <Typography variant="body1" paragraph>
@@ -60,6 +76,7 @@ export default function AboutSection() {
                 width: "280px",
                 height: "56px",
                 borderRadius: 5,
+                marginTop: { xs: 8, md: "auto" },
               }}
             >
               <Typography
@@ -69,8 +86,8 @@ export default function AboutSection() {
                 Quero mudar de vida
               </Typography>
             </Button>
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );

@@ -1,4 +1,4 @@
-import "@fontsource/roboto"; // Import Roboto globally
+import "@fontsource/alexandria"; // Import Alexandria globally
 import type { Metadata } from "next";
 import { primaryFont } from "@/theme/typography";
 import ThemeProvider from "../theme/index";

@@ -8,7 +8,7 @@ export const FinalCTASection = () => {
         py: { xs: 6, md: 8 },
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         {/* Section Title */}
         <Typography variant="h4" align="center" gutterBottom>
           O que nossas mentoradas dizem
@@ -17,7 +17,16 @@ export const FinalCTASection = () => {
         {/* 1st Testimonial */}
         <Grid container spacing={2} sx={{ mt: 4 }} alignItems="flex-start">
           {/* Left: Avatar, Name, Role */}
-          <Grid item xs={12} sm={3}>
+          <Grid
+            item
+            xs={12}
+            sm={3}
+            sx={{
+              display: {xs: "flex", md: "block"},
+              flexDirection: {xs: "column", md: "row"},
+              alignItems: {xs: "center", md: "left"}
+            }}
+          >
             <Avatar
               alt="Luciana Serpa"
               src="/images/luciana.png"
@@ -59,7 +68,16 @@ export const FinalCTASection = () => {
         {/* 2nd Testimonial */}
         <Grid container spacing={2} sx={{ mt: 6 }} alignItems="flex-start">
           {/* Left: Avatar, Name, Role */}
-          <Grid item xs={12} sm={3}>
+          <Grid
+            item
+            xs={12}
+            sm={3}
+            sx={{
+              display: {xs: "flex", md: "block"},
+              flexDirection: {xs: "column", md: "row"},
+              alignItems: {xs: "center", md: "left"}
+            }}
+          >
             <Avatar
               alt="Paula Brielle"
               src="/images/paula.png"

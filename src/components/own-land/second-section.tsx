@@ -11,13 +11,15 @@ export const SecondSection = () => (
       py: 8,
       paddingTop: { xs: "50px", md: "150px" },
       paddingBottom: { xs: "80px", md: "150px" },
+      display: 'flex',
+      justifyContent: 'center'
     }}
   >
     <Grid
       container
       spacing={4}
       justifyContent="center"
-      sx={{ p: 4 }} // optional padding around the grid
+      sx={{ p: 4, width: '85%', maxWidth: 'lg' }} // optional padding around the grid
     >
       {Array.from({ length: 4 }).map((_, index) => (
         <Grid

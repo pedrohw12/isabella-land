@@ -8,7 +8,7 @@ export function cssBaseline(theme: Theme) {
       styleOverrides: {
         '*': {
           boxSizing: 'border-box',
-          fontFamily: "Roboto, Arial, sans-serif",
+          fontFamily: "Alexandria, Arial, sans-serif",
         },
         html: {
           margin: 0,
@@ -19,7 +19,7 @@ export function cssBaseline(theme: Theme) {
           scrollBehavior: 'smooth'
         },
         body: {
-          fontFamily: "Roboto, Arial, sans-serif",
+          fontFamily: "Alexandria, Arial, sans-serif",
           margin: 0,
           padding: 0,
           width: '100%',
