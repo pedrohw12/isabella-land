@@ -1,7 +1,7 @@
 export const handleWhatsAppClick = () => {
-  const phoneNumber = "5581989867687";
+  const phoneNumber = "5581998427246";
   const message =
-    "Olá! Estou interessado(a) em desenvolver um site com você. Poderia me dar mais informações sobre os seus serviços e como podemos começar?";
+    "Olá! Estou interessada em fazer parte da mentoria!";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
