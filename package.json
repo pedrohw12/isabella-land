@@ -1,0 +1,44 @@
+{
+  "name": "landhere",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.5",
+    "@emotion/react": "^11.13.5",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.5",
+    "@fontsource/roboto": "^5.1.0",
+    "@iconify/react": "^5.0.2",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/lab": "^6.0.0-beta.18",
+    "@mui/material": "^6.1.10",
+    "@mui/material-nextjs": "^6.1.9",
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
+    "classnames": "^2.5.1",
+    "googleapis": "^144.0.0",
+    "gray-matter": "^4.0.3",
+    "lodash": "^4.17.21",
+    "next": "15.0.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "sass": "^1.82.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.4",
+    "typescript": "^5"
+  }
+}
