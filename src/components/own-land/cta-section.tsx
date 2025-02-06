@@ -10,7 +10,7 @@ export const FinalCTASection = () => {
     >
       <Container maxWidth="lg">
         {/* Section Title */}
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h3" align="center" gutterBottom>
           O que nossas mentoradas dizem
         </Typography>
 

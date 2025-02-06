@@ -38,13 +38,13 @@ const BenefitsSection = () => {
         }}
       >
         {/* Left Column */}
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h3" gutterBottom sx={{ opacity: "100%" }}>
           Uma vida com Deus
         </Typography>
         <Typography
           variant="subtitle1"
           paragraph
-          sx={{ textAlign: { xs: "center", md: "left" } }}
+          sx={{ opacity: "70%", textAlign: { xs: "center", md: "left" } }}
         >
           Ao buscar um aprofundamento espiritual, respostas de áreas
           estacionadas{!isSmallScreen && <br />} começam a aparecer, a vida se
@@ -52,7 +52,7 @@ const BenefitsSection = () => {
         </Typography>
 
         {/* Right Column */}
-        <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+        <Typography variant="h5" gutterBottom sx={{ mt: 4, opacity: "90%" }}>
           Prepare-se para:
         </Typography>
 
@@ -61,28 +61,40 @@ const BenefitsSection = () => {
             <ListItemIcon>
               <CheckCircleIcon sx={{ color: "#AD509F" }} />
             </ListItemIcon>
-            <ListItemText primary="Se aprofundar na vida espiritual" />
+            <ListItemText
+              primary="Se aprofundar na vida espiritual"
+              sx={{ opacity: "70%" }}
+            />
           </ListItem>
 
           <ListItem disablePadding>
             <ListItemIcon>
               <CheckCircleIcon sx={{ color: "#AD509F" }} />
             </ListItemIcon>
-            <ListItemText primary="Obter respostas de áreas estacionadas" />
+            <ListItemText
+              primary="Obter respostas de áreas estacionadas"
+              sx={{ opacity: "70%" }}
+            />
           </ListItem>
 
           <ListItem disablePadding>
             <ListItemIcon>
               <CheckCircleIcon sx={{ color: "#AD509F" }} />
             </ListItemIcon>
-            <ListItemText primary="Descobrir em Deus sua identidade" />
+            <ListItemText
+              primary="Descobrir em Deus sua identidade"
+              sx={{ opacity: "70%" }}
+            />
           </ListItem>
 
           <ListItem disablePadding>
             <ListItemIcon>
               <CheckCircleIcon sx={{ color: "#AD509F" }} />
             </ListItemIcon>
-            <ListItemText primary="Reativar sua essência" />
+            <ListItemText
+              primary="Reativar sua essência"
+              sx={{ opacity: "70%" }}
+            />
           </ListItem>
         </List>
         <Button

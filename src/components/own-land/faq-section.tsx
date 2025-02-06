@@ -50,7 +50,7 @@ export default function FaqSection() {
     <Box sx={{ backgroundColor: '#F5E6EE', py: 6 }}>
       <Container maxWidth="md">
         <Typography
-          variant="h4"
+          variant="h3"
           align="center"
           gutterBottom
         >

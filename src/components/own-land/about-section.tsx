@@ -12,7 +12,7 @@ export default function AboutSection() {
     >
       <Container maxWidth="lg">
         {/* "Sobre" heading above the two columns (optional approach) */}
-        <Typography variant="h5" sx={{ mb: 2, textAlign: "center" }}>
+        <Typography variant="h3" sx={{ mb: 2, textAlign: "center" }}>
           Sobre
         </Typography>
 
@@ -50,7 +50,7 @@ export default function AboutSection() {
             }}
           >
             <Typography
-              variant="h5"
+              variant="h4"
               gutterBottom
               sx={{ textAlign: { xs: "center", md: "left" } }}
             >

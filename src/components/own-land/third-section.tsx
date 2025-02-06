@@ -59,7 +59,7 @@ export const ThirdSection = () => {
               textAlign: { xs: "center", md: "left" },
             }}
           >
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
               A vida espiritual revela muito mais
             </Typography>
             <Typography variant="body1" paragraph>

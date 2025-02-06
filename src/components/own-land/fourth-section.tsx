@@ -28,7 +28,12 @@ export const FourthSection = () => {
         <Typography variant="h3" align="center" gutterBottom>
           O que essa mentoria{!isSmallScreen && <br />} tem para você
         </Typography>
-        <Typography variant="subtitle1" align="center" paragraph>
+        <Typography
+          variant="subtitle1"
+          paragraph
+          sx={{ opacity: "70%" }}
+          align="center"
+        >
           A mentoria tem como foco X pilares de uma vida cristã, que vai de
           {!isSmallScreen && <br />} encontro com o que a palavra de Deus diz em
           etc etc
@@ -51,7 +56,7 @@ export const FourthSection = () => {
                 my: 1,
               }}
             />
-            <Typography variant="body2" align="center">
+            <Typography variant="body2" align="center" sx={{ opacity: "70%" }}>
               Em constante oração, conseguimos nos aproximar mais de Deus, ter
               um relacionamento de mais intimidade etc etc
             </Typography>
@@ -71,7 +76,7 @@ export const FourthSection = () => {
                 my: 1,
               }}
             />
-            <Typography variant="body2" align="center">
+            <Typography variant="body2" align="center" sx={{ opacity: "70%" }}>
               Em constante oração, conseguimos nos aproximar mais de Deus, ter
               um relacionamento de mais intimidade etc etc
             </Typography>
@@ -91,7 +96,7 @@ export const FourthSection = () => {
                 my: 1,
               }}
             />
-            <Typography variant="body2" align="center">
+            <Typography variant="body2" align="center" sx={{ opacity: "70%" }}>
               Em constante oração, conseguimos nos aproximar mais de Deus, ter
               um relacionamento de mais intimidade etc etc
             </Typography>
@@ -108,7 +113,7 @@ export const FourthSection = () => {
               width: "280px",
               height: "56px",
               borderRadius: 5,
-              mt: 10
+              mt: 10,
             }}
           >
             <Typography

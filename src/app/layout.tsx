@@ -6,10 +6,10 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Landhere",
-  description: "Mude seu conceito sobre sites",
+  title: "IsabellaMentora",
+  description: "Encontre o real sentido da vida",
   keywords:
-    "landing page,landing, page, website, criar website,application,dashboard,admin,template",
+    "landing page,landing, page, website, mentoria, espiritual, mentoria espiritual,template",
   // manifest: "/manifest.json",
   icons: [
     {
