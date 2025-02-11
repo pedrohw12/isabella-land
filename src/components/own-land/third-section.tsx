@@ -16,7 +16,12 @@ export const ThirdSection = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#E7D0DD",
+        // backgroundColor: "#E7D0DD",
+        backgroundColor: "#F5E6EE",
+        backgroundImage: "url(/images/gardenbg.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         py: { xs: 6, md: 8 },
       }}
     >
@@ -33,26 +38,6 @@ export const ThirdSection = () => {
             sx={{
               display: "flex",
               flex: 1,
-              justifyContent: { xs: "center", md: "left" },
-            }}
-          >
-            <Box
-              component="img"
-              src="/images/isabella-lendo.png"
-              alt="Isabella Medeiros"
-              sx={{
-                display: "block",
-                width: "100%",
-                maxWidth: 400,
-                flex: 1,
-              }}
-            />
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex",
-              flex: 1,
               flexDirection: "column",
               justifyContent: "center",
               mt: { xs: 4, md: 0 },
@@ -62,7 +47,13 @@ export const ThirdSection = () => {
             <Typography variant="h3" gutterBottom>
               A vida espiritual revela muito mais
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography
+              variant="body1"
+              paragraph
+              sx={{
+                maxWidth: { xs: "100%", md: "80%", lg: "60%" },
+              }}
+            >
               A incrível capacidade do cérebro de se adaptar e formar novas
               conexões neurais ao longo da vida. Você vai descobrir como
               utilizar isso na sua vida para sair de um estado mental de
