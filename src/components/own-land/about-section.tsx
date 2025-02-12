@@ -8,31 +8,45 @@ export default function AboutSection() {
       sx={{
         backgroundColor: "#F5E6EE", // Light pink
         py: { xs: 6, md: 8 }, // Vertical padding
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
+      <Box
+        maxWidth="lg"
+        sx={{
+          width: { xs: "80%", lg: "100%" },
+          height: "2px",
+          backgroundColor: "#B74F8E",
+          mb: { xs: 6, md: 8 },
+          borderRadius: 2,
+        }}
+      />
       <Container maxWidth="lg">
-        {/* "Sobre" heading above the two columns (optional approach) */}
-        <Typography variant="h3" sx={{ mb: 2, textAlign: "center" }}>
-          Sobre
-        </Typography>
-
         <Box
           sx={{
-            mt: { xs: 5, md: 15 },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             flex: 1,
             justifyContent: "space-between",
           }}
         >
-          <Box sx={{ display: "flex", flex: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flex: 1,
+              justifyContent: { xs: "center", md: "start" },
+            }}
+          >
             <Box
               component="img"
-              src="/images/isabella-cadeira.png"
+              src="/images/isabella-reading.jpeg"
               alt="Isabella Medeiros"
               sx={{
                 display: "block",
                 width: "100%",
+                borderRadius: "8px",
                 maxWidth: 400,
                 flex: 1,
               }}
@@ -52,20 +66,28 @@ export default function AboutSection() {
             <Typography
               variant="h4"
               gutterBottom
-              sx={{ textAlign: { xs: "center", md: "left" } }}
+              sx={{
+                textAlign: { xs: "center", md: "left" },
+                mb: 4,
+                mt: { xs: 4, md: 0 },
+              }}
             >
               Quem é Isabella Medeiros ?
             </Typography>
             <Typography variant="body1" paragraph>
               Líder Espiritual há mais de 10 anos, apaixonada por vidas e por
-              ativar-las ao plano original que Deus criou para cada uma delas,
-              mentora e treinadora na área Espiritual e emocional, ama estudar e
+              ativar-las ao plano original que Deus criou para cada uma delas.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Mentora e treinadora na área Espiritual e emocional, ama estudar e
               mapear pessoas, direcionando-as a viver a vida em abundância que
-              Jesus conquistou na cruz . Prova viva de um milagre, curada por
-              Jesus de uma doença incurável para medicina fundando o projeto
-              Mergulhadas no Altar que surgiu fruto de uma oração em seu quarto,
-              com o objetivo de levar cura emocional, física e principalmente
-              cura Espiritual!
+              Jesus conquistou na cruz.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Prova viva de um milagre, curada por Jesus de uma doença incurável
+              para medicina fundando o projeto Mergulhadas no Altar que surgiu
+              fruto de uma oração em seu quarto, com o objetivo de levar cura
+              emocional, física e principalmente cura Espiritual!
             </Typography>
 
             <Button
@@ -76,7 +98,7 @@ export default function AboutSection() {
                 width: "280px",
                 height: "56px",
                 borderRadius: 5,
-                marginTop: { xs: 8, md: "auto" },
+                marginTop: { xs: 8, md: 8 },
               }}
             >
               <Typography
@@ -89,6 +111,16 @@ export default function AboutSection() {
           </Box>
         </Box>
       </Container>
+      <Box
+        maxWidth="lg"
+        sx={{
+          borderRadius: 2,
+          width: { xs: "80%", lg: "100%" },
+          height: "2px",
+          backgroundColor: "#B74F8E",
+          mt: { xs: 6, md: 8 },
+        }}
+      />
     </Box>
   );
 }
