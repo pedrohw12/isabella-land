@@ -6,17 +6,37 @@ import {
   Grid,
   Typography,
   Button,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
+  Card,
+  CardContent,
 } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import Eco from '@mui/icons-material/Spa';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import { handleWhatsAppClick } from "./utils";
 
 const BenefitsSection = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const benefits = [
+    {
+      text: "Se aprofundar na vida espiritual",
+      icon: <Eco sx={{ color: "#AD509F" }} />
+    },
+    {
+      text: "Obter respostas de áreas estacionadas",
+      icon: <LightbulbIcon sx={{ color: "#AD509F" }} />
+    },
+    {
+      text: "Descobrir em Deus sua identidade",
+      icon: <FavoriteIcon sx={{ color: "#AD509F" }} />
+    },
+    {
+      text: "Reativar sua essência",
+      icon: <AutoAwesomeIcon sx={{ color: "#AD509F" }} />
+    },
+  ];
 
   return (
     <Box
@@ -26,7 +46,7 @@ const BenefitsSection = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#F5E6EE",
-        py: { xs: 6, md: 8 }, // Top/bottom padding
+        py: { xs: 6, md: 8 },
       }}
     >
       <Container
@@ -37,7 +57,6 @@ const BenefitsSection = () => {
           alignItems: "center",
         }}
       >
-        {/* Left Column */}
         <Typography variant="h3" gutterBottom sx={{ opacity: "100%" }}>
           Uma vida com Deus
         </Typography>
@@ -51,52 +70,38 @@ const BenefitsSection = () => {
           torna mais leve e mudanças acontecem.
         </Typography>
 
-        {/* Right Column */}
         <Typography variant="h5" gutterBottom sx={{ mt: 4, opacity: "90%" }}>
           Prepare-se para:
         </Typography>
 
-        <List>
-          <ListItem disablePadding>
-            <ListItemIcon>
-              <CheckCircleIcon sx={{ color: "#AD509F" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Se aprofundar na vida espiritual"
-              sx={{ opacity: "70%" }}
-            />
-          </ListItem>
+        <Grid container spacing={2} sx={{ mt: 2 }}>
+          {benefits.map((benefit, index) => (
+            <Grid item xs={12} sm={6} key={index}>
+              <Card 
+                sx={{ 
+                  height: '100%',
+                  backgroundColor: 'white',
+                  boxShadow: 1,
+                  '&:hover': {
+                    boxShadow: 2,
+                  },
+                }}
+              >
+                <CardContent sx={{ 
+                  display: 'flex', 
+                  alignItems: 'center',
+                  gap: 1,
+                }}>
+                  {benefit.icon}
+                  <Typography sx={{ opacity: "90%" }}>
+                    {benefit.text}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
 
-          <ListItem disablePadding>
-            <ListItemIcon>
-              <CheckCircleIcon sx={{ color: "#AD509F" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Obter respostas de áreas estacionadas"
-              sx={{ opacity: "70%" }}
-            />
-          </ListItem>
-
-          <ListItem disablePadding>
-            <ListItemIcon>
-              <CheckCircleIcon sx={{ color: "#AD509F" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Descobrir em Deus sua identidade"
-              sx={{ opacity: "70%" }}
-            />
-          </ListItem>
-
-          <ListItem disablePadding>
-            <ListItemIcon>
-              <CheckCircleIcon sx={{ color: "#AD509F" }} />
-            </ListItemIcon>
-            <ListItemText
-              primary="Reativar sua essência"
-              sx={{ opacity: "70%" }}
-            />
-          </ListItem>
-        </List>
         <Button
           onClick={handleWhatsAppClick}
           variant="outlined"
@@ -108,10 +113,7 @@ const BenefitsSection = () => {
             mt: 16,
           }}
         >
-          <Typography
-            variant="subtitle1"
-            sx={{ color: "#fff", opacity: "90%" }}
-          >
+          <Typography variant="subtitle1" sx={{ color: "#fff", opacity: "90%" }}>
             Quero mudar de vida
           </Typography>
         </Button>

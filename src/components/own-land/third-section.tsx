@@ -16,7 +16,6 @@ export const ThirdSection = () => {
   return (
     <Box
       sx={{
-        // backgroundColor: "#E7D0DD",
         backgroundColor: "#F5E6EE",
         backgroundImage: "url(/images/gardenbg.png)",
         backgroundRepeat: "no-repeat",
@@ -30,7 +29,7 @@ export const ThirdSection = () => {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            justifyContent: { xs: "column", md: "space-between" },
+            justifyContent: { xs: "center", md: "center" },
             flex: 1,
           }}
         >
@@ -40,6 +39,7 @@ export const ThirdSection = () => {
               flex: 1,
               flexDirection: "column",
               justifyContent: "center",
+              alignItems: "center",
               mt: { xs: 4, md: 0 },
               textAlign: { xs: "center", md: "left" },
             }}
