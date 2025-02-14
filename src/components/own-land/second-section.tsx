@@ -45,45 +45,5 @@ export const SecondSection = () => (
         </Grid>
       ))}
     </Grid>
-    {/* <Box
-      sx={{
-        display: "flex",
-        flexDirection: { xs: "column", md: "column" }, // Responsive layout
-        alignItems: "center",
-        justifyContent: "center",
-        maxWidth: "1200px",
-        mx: "auto",
-        px: 4,
-      }}
-    >
-      <Typography
-        fontWeight="bold"
-        variant="h3"
-        sx={{
-          textAlign: "center",
-          mb: { xs: 1, md: 2 },
-          color: "#fff",
-          opacity: "90%",
-          mt: { xs: 5, md: 0 },
-          maxWidth: "700px",
-        }}
-      >
-        Descubra o poder de um website com design moderno
-      </Typography>
-      <Typography
-        variant="h5"
-        sx={{
-          mb: 4,
-          color: "#fff",
-          opacity: "70%",
-          textAlign: "center",
-          maxWidth: "720px",
-        }}
-      >
-        Experimente a diferença que um design exclusivo pode fazer. Na Landhere,
-        criamos sites sob medida que se destacam da concorrência, evitando a
-        aparência comum dos templates prontos.
-      </Typography>
-    </Box> */}
   </Box>
 );
